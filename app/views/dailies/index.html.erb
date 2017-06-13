@@ -1,0 +1,19 @@
+<header>
+  <h1 id="that_guy">¯\_(ツ)_/¯</h1>
+  <h3 id="sub_head">So like... APIs are pretty cool</h3>
+</header>
+
+<table cellpadding=0>
+  <thead>
+    <th>Image</th>
+    <th>Description</th>
+  </thead>
+  <tbody>
+    <% @keep.each do |event| %>
+      <tr>
+        <td><img src='<%= event["pages"].first["thumbnail"]["source"] %>' width='200'></td>
+        <td class="word_padding"><%= event["text"] %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

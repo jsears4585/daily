@@ -6,6 +6,58 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <style>
+
+      @import url('https://fonts.googleapis.com/css?family=Merriweather|Raleway');
+
+      table { border-collapse: collapse; border-spacing: 0; }
+
+      tbody:before {
+        content: "-";
+        display: block;
+        line-height: 2em;
+        color: transparent;
+      }
+
+      th {
+        font-family: 'Merriweather';
+        font-size: 34px;
+        padding: 12px 0px;
+        background-color: #0e0e75;
+        margin-bottom: 20px;
+        color: beige;
+      }
+
+      td {
+        font-family: 'Raleway';
+        font-size: 18px;
+      }
+
+      header {
+        color: #e044a9;
+        background: #feb1ff url(/assets/texture.png);
+        text-align: center;
+        font-family: 'Merriweather';
+      }
+
+      #that_guy {
+        font-size: 6em;
+        padding-top: 13px;
+        margin: 0px;
+      }
+
+      #sub_head {
+        margin: 0px;
+        padding-bottom: 19px;
+      }
+
+      .word_padding {
+        padding: 2em;
+      }
+
+    </style>
+
   </head>
 
   <body>
