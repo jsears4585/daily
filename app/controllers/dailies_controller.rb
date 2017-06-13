@@ -10,7 +10,7 @@ class DailiesController < ApplicationController
     json = JSON.parse(results)
     @keep = keep_ary(json)
   end
-  
+
   private
 
     def current_month

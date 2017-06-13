@@ -11,8 +11,12 @@
   <tbody>
     <% @keep.each do |event| %>
       <tr>
-        <td><img src='<%= event["pages"].first["thumbnail"]["source"] %>' width='200'></td>
-        <td class="word_padding"><%= event["text"] %></td>
+        <td>
+          <a href='https://en.wikipedia.org/?curid=<%= event["pages"].first["pageid"] %>' target='_blank'>
+            <img src='<%= event["pages"].first["thumbnail"]["source"] %>' width='200'>
+          </a>
+        </td>
+        <td class="word_padding"><span style="color: #c7bc32; font-weight: 700;"><%= event["year"] %></span> — <%= event["text"] %></td>
       </tr>
     <% end %>
   </tbody>
